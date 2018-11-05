@@ -1,6 +1,6 @@
 # FullScreen-Responsive-Nav-Menu
 
-Create the menu in your HTML:
+### Create the menu in your HTML:
 ```
 	<header id="header" role="header">
 		<div class="container">
@@ -25,5 +25,4 @@ Create the menu in your HTML:
 			    	</div>
 			</div>
 		</div>
-	</header>
-       
+	</header> 
