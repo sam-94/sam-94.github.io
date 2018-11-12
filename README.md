@@ -55,3 +55,5 @@
     });
 });
 ```
+## Support:
+If you need help using Our Menu, have a suggestion or idea, or have found a bug, please create an issue.
