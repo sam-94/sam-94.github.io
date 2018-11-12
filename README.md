@@ -12,7 +12,7 @@ With Our Menu, you'll no longer struggle with media queries to create responsive
 <link rel="stylesheet" type="text/css" href="style.css"> 
 ```
 
-##### Add Jquery before closing body tag(Use Jquery 3.3.1 or earlier):
+##### Add Jquery before closing body tag (Use Jquery 3.3.1 or earlier):
 ```
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 ```
