@@ -11,7 +11,7 @@
 ```<link rel="stylesheet" type="text/css" href="style.css"> ```
 
 ##### Add jquery.min.js before closing body tag(Use Jquery 3.3.1 or earlier):
-```<script src="js/jquery.min.js"></script>```
+```<script src="jquery.min.js"></script>```
 
 ##### Create the menu in your HTML:
 ```
