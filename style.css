@@ -8,19 +8,50 @@ format('embedded-opentype'), url('fonts/Roboto-Regular.woff') format('woff'),
 url('fonts/Roboto-Regular.ttf') format('truetype'), url('fonts/Roboto-Regular.svg#Roboto-Regular')
 format('svg'); font-weight: normal; font-style: normal; }
 body {
-	margin: 0;
-	padding: 0;
-	font-size: 15px;
-	font-family: Roboto-Regular;
-	color: #000;
-	background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: Roboto-Regular;
+  color: #000;
+  background-size: cover;
 }
-a:focus, button {
-	outline: 0 !important;
+a:focus, button::-moz-focus-inner{
+  outline: 0;
+  border: 0;
+}
+button:focus {
+  outline: 0;
 }
 img {
   width: 100%;
   height: auto;
+}
+.menu-wrapper {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px) {
+  .menu-wrapper {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .menu-wrapper {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .menu-wrapper {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .menu-wrapper {
+    max-width: 1140px;
+  }
 }
 #header {
   position: fixed;
@@ -28,7 +59,7 @@ img {
   right: 0;
   top: 0;
   width: 100%;
-  padding: 70px 0;
+  padding: 40px 0;
   z-index: 10;
   -webkit-transition: all .7s;
   -o-transition: all .7s;
@@ -48,6 +79,8 @@ img {
   padding-top: 7px;
   cursor: pointer;
   color: #fff;
+  font-size: 15px;
+  font-family: inherit;
   position: relative;
   z-index: 2;
   border: 0;
@@ -66,7 +99,7 @@ img {
 }
 .toggle span:last-child {
 	margin-bottom: 4px;
-  width: 70%;
+  width: 80%;
 }
 .toggle.open span:nth-child(1) {
   -webkit-transform: rotate(45deg);
@@ -146,11 +179,12 @@ img {
 }
 .menu ul li a {
   color: #fff;
-  padding: 2px 30px;
+  padding: 3px 30px;
   margin: 12px 0;
   display: inline-block;
   letter-spacing: 4px;
   font-size: 25px;
+  text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
