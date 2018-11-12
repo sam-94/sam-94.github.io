@@ -4,6 +4,7 @@ With Our Menu, you'll no longer struggle with media queries to create responsive
 (Tested on following browsers and confirmed that the Menu is working.)
 * Latest Chrome
 * Latest Firefox
+* Opera
 * Android 2.2+ or earlier
 ## Installation:
 
