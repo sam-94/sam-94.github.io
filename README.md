@@ -1,6 +1,19 @@
 # FullScreen-Responsive-Nav-Menu
 
-### Create the menu in your HTML:
+## Browser Support:
+(Tested on following browsers and confirmed that the Menu is working.)
+* Latest Chrome
+* Latest Firefox
+* Android 2.2+ or earlier
+## Installation:
+
+##### Add style.css to the head of your document:
+```<link rel="stylesheet" type="text/css" href="style.css"> ```
+
+##### Add jquery.min.js before closing body tag(Use Jquery 3.3.1 or earlier):
+```<script src="js/jquery.min.js"></script>```
+
+##### Create the menu in your HTML:
 ```
 	<header id="header" role="header">
 		<div class="container">
@@ -26,3 +39,19 @@
 			</div>
 		</div>
 	</header> 
+```
+##### Initilalize the menu:
+```$(document).ready(function(){
+    $('.toggle').click(function(){
+    	 $(this).toggleClass('open');
+       $('.menu, .innermenu').toggleClass('active');
+    });
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= 200) {
+            $('#header').addClass('sticky');
+        } else {
+            $('#header').removeClass('sticky');
+        }
+    });
+});
+```
