@@ -24,7 +24,7 @@ With Our Menu, you'll no longer struggle with media queries to create responsive
 ##### Create the menu in your HTML:
 ```
 	<header id="header" role="header">
-		<div class="container">
+		<div class="menu-wrapper">
 			<div class="logo">
 				<a href="#"><img src="logo.png" alt="logo"></a>
 			</div>
